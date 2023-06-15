@@ -1,0 +1,80 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<body class="bg-changes" id="Notes-font" xmlns="http://www.w3.org/1999/html">
+<h1 align="center" id="h1content"> Feedback Form </h1>
+<br>
+<div id="containsty">
+<div align="centre" class="col-md-20" id="cardsignup" >
+    <h1 align="centre" class="h4content">"Welcome to Abhyaz Learning Community's Feedback Form. Share your thoughts!"</h1>
+        <div class="card mt-100"  class="input-field">
+          <div class = "card-body">
+            <form action="/" method="POST">
+                <div class="form-group">
+                <label for="firstName">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Enter full name"
+                    />
+              </div>
+              <div class="form-group">
+                  <i class="uil uil-envelope icon"></i>
+                <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Enter email"
+                    />
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password1"
+                      name="password1"
+                      placeholder="Enter password"
+                    />
+              </div>
+                <div class="form-group">
+                <label for="password1"> Enter your Experience with the platform </label>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="experience"
+                      name="experience"
+                      placeholder="Enter your experience"
+                    /></textarea>
+              </div>
+                <div class="form-group">
+                <label for="password1"> Where we can improve more ? </label>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="improvement"
+                      name="improvement"
+                      placeholder="Enter your answer"
+                    /></textarea>
+              </div>
+                <div class="form-group">
+                <label for="password1"> Anything else you want to share </label>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="extra"
+                      name="extra"
+                      placeholder="Enter your thoughts"
+                    /></textarea>
+              </div>
+                <div align="center" >
+                    <button type="submit" class="btn btn-success"><a class="nav-item nav-link" id="logout" href="/logout">Submit</a></button>
+                </div>
+            </form>
+          </div>
+      </div>
+</body>
+{% endblock %}

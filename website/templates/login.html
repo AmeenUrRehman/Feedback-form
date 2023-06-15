@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+  <body class="bg-nav">
+
+  <nav class = "navbar" id="headercon" > Abhyaz Learning Community! </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class = "text-light display-4 mt-100" style="font-size:49px" id="logincontent" >
+          Welcome to Abhyaz Learning Community! Join our vibrant platform for lifelong learners, access resources, connect with experts, and engage in meaningful discussions. Start your learning journey today!
+        </h1>
+      </div>
+      <div class="col-md-4" id="cardfont">
+        <div class="card mt-100"  class="input-field">
+          <div class = "card-body">
+            <form method="POST">
+            <h3 align="center">Login</h3>
+              <div class="form-group">
+                <i class="uil uil-envelope icon"></i>
+                <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email"
+                  />
+              </div>
+              <div class="form-group">
+                <i class="uil uil-eye-slash showHidePw"></i>
+                <label for="password">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                  />
+              </div>
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
+          </form>
+
+            <p class="mt-2">Not a member?<a href="/sign-up">&nbsp;Create Account</a> </p>
+          </div>
+      </div>
+  </div>
+  </body>
+{% endblock %}
